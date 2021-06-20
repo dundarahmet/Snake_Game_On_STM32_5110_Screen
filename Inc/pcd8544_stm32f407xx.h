@@ -15,32 +15,32 @@
 // 					Instruction sets
 
 // 1. NOP function
-#define NOP														(uint8_t) 0x0
+#define NOP													        	(uint8_t) 0x0
 
 // 2. Function Sets
 #define FUNCTION_SET_BEGINNER									(uint8_t) 0x20
 
-#define PD_CHIP_IN_ACTIVE										(uint8_t) 0x0
-#define PD_CHIP_IN_POWER_DOWN_MODE								(uint8_t) 0x4
+#define PD_CHIP_IN_ACTIVE									  	(uint8_t) 0x0
+#define PD_CHIP_IN_POWER_DOWN_MODE						(uint8_t) 0x4
 
 #define HORIZONTAL_ADDRESSING									(uint8_t) 0x0
-#define VERTICAL_ADDRESSING										(uint8_t) 0x1
+#define VERTICAL_ADDRESSING										(uint8_t) 0x2
 
-#define H_VALUE_FOR_DISPALY_OR_Y_X_ADDRESS						(uint8_t) 0x0
+#define H_VALUE_FOR_DISPALY_OR_Y_X_ADDRESS		(uint8_t) 0x0
 // 3. Display Configuration
-#define SET_DISPLAY_NORMAL_MODE									(uint8_t) 0xC
-#define SET_DISPLAY_INVERSE_VIDEO_MODE							(uint8_t) 0xD
+#define SET_DISPLAY_NORMAL_MODE								(uint8_t) 0xC
+#define SET_DISPLAY_INVERSE_VIDEO_MODE				(uint8_t) 0xD
 
 // 4. Y Address
 #define SET_Y_ADDRESS_BANK_0									(uint8_t) 0x40
 
 // 5. X Address
-#define SET_X_ADDRESS_0											(uint8_t) 0x80
+#define SET_X_ADDRESS_0											  (uint8_t) 0x80
 
-#define H_VALUE_FOR_TEMPERATURE_BIAS_VOP						(uint8_t) 0x1
+#define H_VALUE_FOR_TEMPERATURE_BIAS_VOP			(uint8_t) 0x1
 
 // 6. TEMPERATURE SETTING
-#define SET_VLCD_TEMPERATURE_COEFFICIENT_0						(uint8_t) 0x4
+#define SET_VLCD_TEMPERATURE_COEFFICIENT_0		(uint8_t) 0x4
 
 
 void LCD_Reset_Coordinate (void) ;
