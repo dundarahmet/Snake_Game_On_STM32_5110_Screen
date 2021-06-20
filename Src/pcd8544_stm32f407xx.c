@@ -14,6 +14,7 @@
 void LCD_Reset_Coordinate (void) {
 	LCD_Command_Enabled() ;
 	SPI2_Send_8_bit_data(FUNCTION_SET_BEGINNER | PD_CHIP_IN_ACTIVE | HORIZONTAL_ADDRESSING | H_VALUE_FOR_DISPALY_OR_Y_X_ADDRESS) ;
+	SPI2_Send_8_bit_data(SET_DISPLAY_NORMAL_MODE) ;
 	SPI2_Send_8_bit_data(SET_X_ADDRESS_0) ;
 	SPI2_Send_8_bit_data(SET_Y_ADDRESS_BANK_0) ;
 
