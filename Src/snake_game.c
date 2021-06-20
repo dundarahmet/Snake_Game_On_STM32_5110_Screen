@@ -268,14 +268,12 @@ void game_init (void) {
 
 	head_row = (holder & 0xFF) % 12 ;
 	head_column = (holder & 0xFF00) % 16 + 5 ;
-
-	set_new_food_position() ;
-
 	base[head_row][head_column] = DIRECTION_RIGHT ;
 	base[head_row][head_column - 1] = DIRECTION_RIGHT ;
 	base[head_row][head_column - 2] = DIRECTION_RIGHT ;
 	base[head_row][head_column - 3] = DIRECTION_RIGHT ;
-	base[food_row][food_column] = FOOD_BLOCK ;
+	
+	set_new_food_position() ;
 }
 
 void set_new_food_position (void) {
