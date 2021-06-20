@@ -2,8 +2,9 @@
 
 ```
 Inc folder contains needed headers file and Scr folder contains their source codes. 
-There are files which are the same name on the project file which is created by STM32cubeide
-You must copy move files in Inc and Src in the repository to Inc and Src in the project file on the STM32cubeide.
+There are folders which are the same name on the project folder which is created by STM32cubeide
+You must copy files in Inc and Src in the repository to Inc 
+and Src in the project file on the STM32cubeide.
 ```
 
 # Requirement Components for Running without making any changing
