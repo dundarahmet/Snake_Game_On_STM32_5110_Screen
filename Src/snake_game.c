@@ -517,7 +517,7 @@ void EXTI1_IRQHandler (void) {
 			if (game_status == STOP) { game_status = START ; }
 
 			if (base[head_row][head_column] == DIRECTION_RIGHT) {
-				// invalid move. snake will continue to move left.
+				// invalid move. snake will continue to move righy.
 				move_status = MOVE_DIRECTION_RIGHT ;
 			} else {
 				move_status = MOVE_DIRECTION_LEFT ;
@@ -535,7 +535,7 @@ void EXTI2_IRQHandler (void) {
 			if (game_status == STOP) { game_status = START ; }
 
 			if (base[head_row][head_column] == DIRECTION_DOWN) {
-				// invalid move. snake will continue to move left.
+				// invalid move. snake will continue to move down.
 				move_status = MOVE_DIRECTION_DOWN ;
 			} else {
 				move_status = MOVE_DIRECTION_UP ;
@@ -553,7 +553,7 @@ void EXTI3_IRQHandler (void) {
 			if (game_status == STOP) { game_status = START ; }
 
 			if (base[head_row][head_column] == DIRECTION_UP) {
-				// invalid move. snake will continue to move left.
+				// invalid move. snake will continue to move up.
 				move_status = MOVE_DIRECTION_UP ;
 			} else {
 				move_status = MOVE_DIRECTION_DOWN ;
