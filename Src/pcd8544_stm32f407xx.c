@@ -97,7 +97,7 @@ void HSE_168MHZ_Init (void) {
 	while (!(RCC->CR & 0x20000)) { } 			// wait until HSE is ready.
 
 	//	VOS
-	RCC->CR |= (0x4000) ;						// set VOS to 1
+	PWR->CR |= (0x4000) ;						// set VOS to 1
 
 	//	LATENCY
 	FLASH->ACR &= ~(0x7) ;						// reset latency in the flash_acr
